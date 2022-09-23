@@ -1,0 +1,281 @@
+.container {
+   width: 80%;
+   margin: 30px auto;
+   /* border: 1px solid black; */
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1.5fr);
+   gap: 20px;
+}
+body h1 {
+   text-align: center;
+   font-family: sans-serif;
+   font-size: 32px;
+   font-weight: bold;
+   margin: 10px auto;
+}
+.score {
+   /* background-color: red; */
+   grid-column-start: 1;
+   grid-column-end: 2;
+   grid-row-start: 1;
+   grid-row-end: 2;
+   display: grid;
+   place-items: center start;
+}
+.score-player,
+.score-com {
+   width: 65px;
+   height: 65px;
+   margin-left: 10px;
+   border-radius: 8px;
+   text-align: center;
+   line-height: 65px;
+   font-size: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.score-player {
+   background-color: blue;
+   color: white;
+}
+.score-com {
+   background-color: red;
+   color: white;
+}
+.line {
+   width: 85px;
+   height: 2px;
+   background-color: #dedede;
+   border-radius: 70px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+.game {
+   grid-column-start: 3;
+   grid-column-end: 4;
+   grid-row-start: 1;
+   grid-row-end: 2;
+   display: grid;
+   place-items: center end;
+}
+.rules {
+   width: 200px;
+   height: 100px;
+   /* box-shadow: 0px 5px 10px 0px rgba(100, 100, 100, 0.3); */
+   text-align: center;
+   display: grid;
+   place-items: center;
+   position: relative;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+}
+.blue {
+   background-color: blue;
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   top: 10%;
+   left: 70%;
+   border-radius: 30px;
+}
+.red {
+   background-color: red;
+   position: absolute;
+   top: 60%;
+   left: 65%;
+   width: 30px;
+   height: 30px;
+   border-radius: 30px;
+}
+.com-container,
+.result-container {
+   display: grid;
+   place-items: center;
+   /* border: 1px solid black; */
+}
+.com-container {
+   background-color: red;
+   border-radius: 30px;
+   box-sizing: border-box;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   grid-column-start: 2;
+   grid-column-end: 3;
+}
+.result-container {
+   grid-column-start: 2;
+   grid-column-end: 3;
+}
+.player-container {
+   background-color: blue;
+   border-radius: 30px;
+   grid-column-start: 1;
+   grid-column-end: 4;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(1, 1fr);
+   place-items: center;
+   justify-content: space-between;
+}
+.player-container div,
+.com {
+   background-color: white;
+   width: 130px;
+   height: 130px;
+   border-radius: 20%;
+   text-align: center;
+}
+.container img {
+   margin-top: 15px;
+}
+.result {
+   width: 300px;
+   height: 130px;
+   background-color: white;
+   border-radius: 30px;
+   box-shadow: 0px 0px 0px 5px rgba(100, 100, 100, 1);
+   text-align: center;
+   line-height: 130px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: green;
+   font-size: 30px;
+   font-weight: bold;
+}
+.player-container div:hover {
+   transform: scale(1.1);
+   cursor: pointer;
+}
+.player-container img {
+   width: 100px;
+   height: 100px;
+}
+/* CSS reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol,
+ul {
+   list-style: none;
+}
+blockquote,
+q {
+   quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: "";
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
